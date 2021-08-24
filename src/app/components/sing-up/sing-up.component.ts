@@ -1,5 +1,8 @@
+/* --- Angular Imports --- */
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+
+/* --- Auth Imports --- */
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -7,6 +10,7 @@ import { AuthService } from 'src/app/services/auth.service';
   templateUrl: './sing-up.component.html',
   styleUrls: ['./sing-up.component.css']
 })
+
 export class SingUpComponent implements OnInit {
 
   singUp:FormGroup;

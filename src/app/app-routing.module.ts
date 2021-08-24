@@ -8,6 +8,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { SingUpComponent } from './components/sing-up/sing-up.component';
 import { TableComponent } from './components/table/table.component';
+
+/* --- Gards Imports --- */
 import { AuthGardService } from './gards/auth-gard.service';
 
 
@@ -23,4 +25,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

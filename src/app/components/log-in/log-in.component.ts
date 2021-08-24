@@ -1,6 +1,9 @@
+/* --- Angular Imports --- */
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+
+/* --- Auth Imports --- */
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
