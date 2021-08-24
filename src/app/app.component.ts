@@ -11,4 +11,5 @@ export class AppComponent {
     localStorage.removeItem("token")
     alert("logOut success")
   }
+  
 }
