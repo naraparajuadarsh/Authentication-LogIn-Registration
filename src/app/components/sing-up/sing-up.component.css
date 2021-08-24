@@ -1,0 +1,7 @@
+.s{
+    width: 234px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
