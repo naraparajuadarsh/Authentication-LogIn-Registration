@@ -1,1 +1,20 @@
-<p>table works!</p>
+<table class="table table-stripped">
+    <thead class="table table-dark">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Id</th>
+            <th>Avatar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.first_name}}</td>
+            <td>{{employee.last_name}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.id}}</td>
+            <td>{{employee.avatar}}</td>
+        </tr>
+    </tbody>
+</table>

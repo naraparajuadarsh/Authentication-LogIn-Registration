@@ -23,6 +23,7 @@ export class AuthService {
   createStudent(value:SingUpAndLogInModel):Observable<any>{
     return this.httpClient.post("https://reqres.in/api/login",value)
   }
+
 }
 
 
