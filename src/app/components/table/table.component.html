@@ -1,3 +1,4 @@
+<!-- table -->
 <table class="table table-stripped">
     <thead class="table table-dark">
         <tr>
@@ -18,3 +19,9 @@
         </tr>
     </tbody>
 </table>
+
+<!-- Pagination -->
+<ul class="pagination justify-content-end pagination-lg n" *ngFor='let in of counter(toatl_pages) ;let i = index'>
+    <li (click)="liclick(i+1)" class="page-item"><a class="page-link">{{i+1}}</a></li>
+</ul>
+  

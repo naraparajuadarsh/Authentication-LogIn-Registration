@@ -15,6 +15,9 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { TableComponent } from './components/table/table.component';
 import { FormComponent } from './components/form/form.component';
 import { TokenInterceptors } from './interceptors/token.interceptors';
+import { ClarityModule } from '@clr/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -30,7 +33,9 @@ import { TokenInterceptors } from './interceptors/token.interceptors';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ClarityModule,
+    BrowserAnimationsModule,
   ],
   providers: [{
     provide:HTTP_INTERCEPTORS, useClass: TokenInterceptors, multi:true

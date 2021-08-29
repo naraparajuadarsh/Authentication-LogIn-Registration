@@ -1,6 +1,9 @@
-import { HttpClient, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+/* --- Angular Imports --- */
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+
+/* --- Other Imports --- */
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -12,23 +15,11 @@ export class TokenInterceptors implements HttpInterceptor{
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     let token = localStorage.getItem("token")
-    console.log("tokenfgfvg f")
+    // console.log("tokenfgfvg f")
     if(token)
     {
       req.clone({
         headers:req.headers.set("Authorization",token)
-      })
-
-      req.clone({
-        headers:req.headers.set("Cache-Control",'no-cache')
-      })
-
-      req.clone({
-        headers:req.headers.set("Pragma",'no-cache')
-      })
-
-      req.clone({
-        headers:req.headers.set("Expires",'0')
       })
 
     }
